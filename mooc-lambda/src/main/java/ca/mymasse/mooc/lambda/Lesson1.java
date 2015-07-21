@@ -3,7 +3,7 @@
  *
  * JDK 8 MOOC Lesson 1 homework
  */
-package org.mymasse.mooc.lambda;
+package ca.mymasse.mooc.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
