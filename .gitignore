@@ -1,3 +1,9 @@
+target
+.project
+.classpath
+.settings
+.springBeans
+
 *.class
 
 # Mobile Tools for Java (J2ME)
