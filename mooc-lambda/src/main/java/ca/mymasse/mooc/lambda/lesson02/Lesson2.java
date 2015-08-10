@@ -3,7 +3,7 @@
  *
  * JDK 8 MOOC Lesson 2 homework
  */
-package ca.mymasse.mooc.lambda;
+package ca.mymasse.mooc.lambda.lesson02;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.util.stream.Stream;
 /**
  * @author Speakjava (simon.ritter@oracle.com)
  */
-public class Lesson2 {
+public class Lesson02 {
 	private static final String WORD_REGEXP = "[- .:,]+";
 
 	/**
@@ -150,7 +150,7 @@ public class Lesson2 {
 	 *             If file access does not work
 	 */
 	public static void main(String[] args) throws IOException, URISyntaxException {
-		Lesson2 lesson = new Lesson2();
+		Lesson02 lesson = new Lesson02();
 		lesson.runExercises();
 	}
 }
