@@ -9,7 +9,9 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /**
  * @author Simon Ritter (@speakjava)
@@ -97,9 +99,14 @@ public class Lesson03 {
 	 * @return The list processed in whatever way you want
 	 */
 	static List<String> processWords(List<String> wordList, boolean parallel) {
-		// YOUR CODE HERE
+		Stream<String> stream = wordList.stream();
 
-		return null;
+		if (parallel) {
+			stream.parallel();
+		}
+
+		return stream.filter(word -> word.length() > 2).distinct().map(String::toUpperCase)
+				.collect(Collectors.toList());
 	}
 
 	/**
